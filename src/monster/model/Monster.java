@@ -15,7 +15,7 @@ public class Monster
 	}
 
 	
-	public Monster(String monstername, int monstereyes, int monsterEyes, boolean monsteBellyBotton, double monsterlegs, double MonsterHair)
+	public Monster(String monstername, int monstereyes, int monsternoses , double monsterlegs, double MonsterHair, boolean BellyButton)
 	{
 		this.monstername = monstername;	
 		this.monsterEyes = monsterEyes;
@@ -23,5 +23,11 @@ public class Monster
 		this.monsterLegs = monsterLegs;
 		this.monsterHair = monsterHair;
 		this.monsterBellyButton=monsterBellyButton;
+	}
+	public String toString()
+	{
+		String monsterInfo = "My monster has " + monsterLegs + "Legs and its' name is " + monstername;
+		
+		return monsterInfo;
 	}
 	}	
