@@ -15,7 +15,34 @@ public class Monster
 	}
 
 	
-	public Monster(String monstername, int monstereyes, int monsternoses , double monsterlegs, double MonsterHair, boolean BellyButton)
+	public Monster(String monstername, int monsterEyes, int monsterNoses , double monsterLegs, double MonsterHair, boolean BellyButton)
+	{
+	}
+	
+	public String getMonsterName()
+	{
+		return monstername;
+	}
+		public int getMonsterEyes()
+		{
+			return monsterEyes;
+		}
+		public void setmonsterName(String monsterName) 
+		{
+			this.monstername= monsterName;
+		}
+		public double getmonsterLegs(String monsterLegs)
+		{
+			return 0;
+		}
+		public void setMonasterEyes(int monsterEyes)
+		{
+			this.monsterEyes = monsterEyes;
+		}
+	public int setMonsterNoses()
+	{
+		return monsterNoses;
+	}
 	{
 		this.monstername = monstername;	
 		this.monsterEyes = monsterEyes;
