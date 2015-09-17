@@ -2,7 +2,7 @@ package monster.model;
 
 public class Monster
 {
-	private String monstername;
+	private String monsterName;
 	private int monsterEyes;
 	private int monsterNoses;
 	private double monsterLegs;
@@ -15,45 +15,70 @@ public class Monster
 	}
 
 	
-	public Monster(String monstername, int monsterEyes, int monsterNoses , double monsterLegs, double MonsterHair, boolean BellyButton)
+	public Monster(String monsterName, int monsterEyes, int monsterNoses , double monsterLegs, double monsterHair, boolean monsterBellyButton)
 	{
-	}
-	
-	public String getMonsterName()
-	{
-		return monstername;
-	}
-		public int getMonsterEyes()
-		{
-			return monsterEyes;
-		}
-		public void setmonsterName(String monsterName) 
-		{
-			this.monstername= monsterName;
-		}
-		public double getmonsterLegs(String monsterLegs)
-		{
-			return 0;
-		}
-		public void setMonasterEyes(int monsterEyes)
-		{
-			this.monsterEyes = monsterEyes;
-		}
-	public int setMonsterNoses()
-	{
-		return monsterNoses;
-	}
-	{
-		this.monstername = monstername;	
+		this.monsterName = monsterName;	
 		this.monsterEyes = monsterEyes;
 		this.monsterNoses = monsterNoses;
 		this.monsterLegs = monsterLegs;
 		this.monsterHair = monsterHair;
-		this.monsterBellyButton=monsterBellyButton;
+		this.monsterBellyButton = monsterBellyButton;
 	}
+	//getters
+	public String getMonsterName()
+	{
+		return monsterName;
+	}
+	public int getMonsterEyes()
+	{
+		return monsterEyes;
+	}
+	public int getMonsterNoses()
+	{
+		return monsterNoses;
+	}
+	public double getmonsterLegs()
+	{
+		return monsterLegs;
+	}
+	public double getmonsterHair()
+	{
+		return monsterHair;
+	}
+	public boolean getmonsterBellyButton()
+	{
+		return monsterBellyButton;
+	}
+	
+	//setters
+	public void setmonsterName(String monsterName)
+	{
+		this.monsterName = monsterName;
+	}
+	public void setMonsterEyes(int newMonsterEyes)
+	{
+		this.monsterEyes = newMonsterEyes;
+	}
+	public void setmonsterNoses(int monsterNoses)
+	{
+		this.monsterNoses = monsterNoses;
+	}
+	public void setmonsterLegs(double monsterLegs)
+	{
+		this.monsterLegs = monsterLegs;
+	}
+	public void setmonsterHair(double monsterHair)
+	{
+		this.monsterHair = monsterHair;
+	}
+	public void setmonsterBellyButton(boolean monsterBellyButton)
+	{
+		this.monsterBellyButton = monsterBellyButton;
+	}
+	
 	public String toString()
 	{
-		String monsterInfo = " My monster has " + monsterLegs + " Legs and its' name is " + monstername + " My monster has " + monsterEyes + " My monster has " + monsterNoses + " My monster has " + monsterHair + " My monster has" + monsterBellyButton;
+		String monsterInfo = " My monster has " + monsterLegs + " Legs and its' name is " + monsterName + " My monster has " + monsterEyes + " My monster has " + monsterNoses + " My monster has " + monsterHair + " My monster has" + monsterBellyButton;
 		
 		return monsterInfo;
 	}
