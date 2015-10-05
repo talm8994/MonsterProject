@@ -43,14 +43,21 @@ public class MonsterController
 	private boolean isInteger(String input)
 	{
 		boolean isInt = false;
-		
+		try
+		{
+			int validInt = Integer.parseInt(input);
+			isInt = true;
+		}
+		catch (NumberFormatException error)
+		{
+			myPopups.displayResponse("not valid int");
+		}
 		return isInt;
 	}
 	
 	private boolean isDouble(String input)
 	{
 		boolean isDouble = false;
-
 		try
 		{
 			double validDouble = Double.parseDouble(input);
@@ -61,6 +68,12 @@ public class MonsterController
 			myPopups.displayResponse("you did not tipe valid number.");
 		}
 		return isDouble;
+	}
+	
+	private boolean isBoolean(String input)
+	{
+		boolean isBoolean = false;
+		return isBoolean;
 	}
 	
 	private void askQuestions()
