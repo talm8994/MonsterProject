@@ -78,7 +78,7 @@ public class Monster
 	
 	public String toString()
 	{
-		String monsterInfo = " My monster has " + monsterLegs + " Legs and its' name is " + monsterName + " My monster has " + monsterEyes + " My monster has " + monsterNoses + " My monster has " + monsterHair + " My monster has" + monsterBellyButton;
+		String monsterInfo = " My monster has " + monsterLegs + " Legs and its' name is " + monsterName + " My monster has Eyes " + monsterEyes + " My monster has Noses " + monsterNoses + " My monster has Hair " + monsterHair + " My monster has Belly Butoon" + monsterBellyButton;
 		
 		return monsterInfo;
 	}

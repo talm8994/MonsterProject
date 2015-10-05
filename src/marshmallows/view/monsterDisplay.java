@@ -1,9 +1,20 @@
 package marshmallows.view;
 
-public class monsterDisplay
+import javax.swing.JOptionPane;
+
+public class MonsterDisplay
 {
-	public void displayInfo(String info)
+	public String getAnswer(String input)
 	{
-		System.out.println("My monster info is: " + info);
+		String answer = "";
+		
+		answer = JOptionPane.showInputDialog(null, input);
+		
+		return answer;
+	}
+	
+	public void displayResponse(String input)
+	{
+		JOptionPane.showMessageDialog(null, input);
 	}
 }
