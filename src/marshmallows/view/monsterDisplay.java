@@ -2,7 +2,7 @@ package marshmallows.view;
 
 import javax.swing.JOptionPane;
 
-public class MonsterDisplay
+public class monsterDisplay
 {
 	public String getAnswer(String input)
 	{

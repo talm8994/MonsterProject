@@ -2,14 +2,14 @@ package monster.controller;
 
 import input.view.PopupDisplay;
 import monster.model.Monster;
-import marshmallows.view.MonsterDisplay;
+import marshmallows.view.monsterDisplay;
 import java.util.Scanner;
 
 public class MonsterController
 {
 	private Monster thomasMonster; // Declares a Monster called thomasMonster.
 	private Monster userMonster;
-	private MonsterDisplay myDisplay;
+	private monsterDisplay myDisplay;
 	private Scanner monsterScanner;
 	private PopupDisplay myPopups;
 	public MonsterController()
@@ -22,7 +22,7 @@ public class MonsterController
 		boolean hasBellyButton = true;
 
 		monsterScanner = new Scanner(System.in);
-		myDisplay = new MonsterDisplay();
+		myDisplay = new monsterDisplay();
 		thomasMonster = new Monster(name, eyes, noses, legs, hair, hasBellyButton);
 		myPopups = new PopupDisplay();
 	}
